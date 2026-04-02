@@ -90,16 +90,48 @@ export default function HomePage() {
           borderTop: '1px solid rgba(201,169,110,0.2)',
           background: 'rgba(26,20,16,0.55)',
           backdropFilter: 'blur(8px)',
-          padding: '20px 0',
+          padding: '18px 0',
+          overflow: 'hidden',
         }}>
-          <div className="container-rv">
-            <div style={{ display: 'flex', gap: '32px', flexWrap: 'wrap', justifyContent: 'center' }}>
-              {['Est. 2005', '20+ Years of Healing', '5 Private Villas', '30+ Treatments', 'Doctor-Led Care'].map((t) => (
-                <span key={t} style={{ fontFamily: 'Jost, sans-serif', fontWeight: 400, fontSize: '11px', letterSpacing: '0.18em', textTransform: 'uppercase', color: 'rgba(247,243,238,0.6)' }}>
-                  {t}
-                </span>
-              ))}
-            </div>
+          <style>{`
+            @keyframes trust-scroll {
+              0%   { transform: translateX(0); }
+              100% { transform: translateX(-50%); }
+            }
+            .trust-track {
+              display: flex;
+              width: max-content;
+              animation: trust-scroll 18s linear infinite;
+            }
+            .trust-track:hover { animation-play-state: paused; }
+            /* Desktop: static centered row */
+            @media (min-width: 768px) {
+              .trust-track {
+                animation: none;
+                width: 100%;
+                justify-content: center;
+                flex-wrap: nowrap;
+              }
+              .trust-clone { display: none; }
+            }
+          `}</style>
+
+          {/* Scrolling on mobile, static on desktop */}
+          <div className="trust-track">
+            {/* Original set */}
+            {['Est. 2005', '20+ Years of Healing', '5 Private Villas', '30+ Treatments', 'Doctor-Led Care'].map((t) => (
+              <span key={t} style={{ display: 'flex', alignItems: 'center', gap: '20px', paddingRight: '40px', flexShrink: 0, fontFamily: 'Jost, sans-serif', fontWeight: 400, fontSize: '11px', letterSpacing: '0.18em', textTransform: 'uppercase', color: 'rgba(247,243,238,0.6)' }}>
+                <span style={{ width: '3px', height: '3px', borderRadius: '50%', background: 'rgba(201,169,110,0.45)', flexShrink: 0, display: 'inline-block' }} />
+                {t}
+              </span>
+            ))}
+            {/* Duplicate for seamless loop (mobile only) */}
+            {['Est. 2005', '20+ Years of Healing', '5 Private Villas', '30+ Treatments', 'Doctor-Led Care'].map((t) => (
+              <span key={`clone-${t}`} className="trust-clone" style={{ display: 'flex', alignItems: 'center', gap: '20px', paddingRight: '40px', flexShrink: 0, fontFamily: 'Jost, sans-serif', fontWeight: 400, fontSize: '11px', letterSpacing: '0.18em', textTransform: 'uppercase', color: 'rgba(247,243,238,0.6)' }}>
+                <span style={{ width: '3px', height: '3px', borderRadius: '50%', background: 'rgba(201,169,110,0.45)', flexShrink: 0, display: 'inline-block' }} />
+                {t}
+              </span>
+            ))}
           </div>
         </div>
       </section>

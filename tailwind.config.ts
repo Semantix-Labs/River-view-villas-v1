@@ -9,8 +9,20 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        gold:       "#C9A96E",
+        "gold-light": "#E8D5B0",
+        deep:       "#1A1410",
+        earth:      "#2C2016",
+        cream:      "#F7F3EE",
+        sage:       "#7A8C6E",
+        river:      "#4A6670",
+        "text-dark":  "#1A1410",
+        "text-mid":   "#5C4F3A",
+        "text-light": "#9E8E78",
+      },
+      fontFamily: {
+        display: ["Cormorant Garamond", "serif"],
+        body:    ["Jost", "sans-serif"],
       },
     },
   },

@@ -152,7 +152,7 @@ export default function Footer() {
           gap: '16px',
         }}>
           <p style={{ color: 'var(--text-light)', fontSize: '12px', letterSpacing: '0.05em' }}>
-            © 2025 River View Villas · All Rights Reserved
+            © 2026 River View Villas · All Rights Reserved
           </p>
           <p style={{ color: 'rgba(158,142,120,0.5)', fontSize: '12px', fontStyle: 'italic', fontFamily: 'Cormorant Garamond, serif' }}>
             Built with intention for healing.

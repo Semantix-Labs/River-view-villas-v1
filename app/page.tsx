@@ -55,12 +55,25 @@ export default function HomePage() {
 
       {/* HERO */}
       <section style={{ position: 'relative', minHeight: '100vh', display: 'flex', alignItems: 'center' }}>
-        <div style={{
-          position: 'absolute', inset: 0,
-          background: 'linear-gradient(160deg, #1A2810 0%, #1A1410 45%, #2C2820 100%)',
-          zIndex: 0,
-        }} />
-        <div style={{ position: 'absolute', inset: 0, background: 'rgba(26,20,16,0.35)', zIndex: 1 }} />
+        {/* Video background */}
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          style={{
+            position: 'absolute',
+            inset: 0,
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            zIndex: 0,
+          }}
+        >
+          <source src="/header vidoe.mp4" type="video/mp4" />
+        </video>
+        {/* Dark overlay for text legibility */}
+        <div style={{ position: 'absolute', inset: 0, background: 'rgba(26,20,16,0.55)', zIndex: 1 }} />
 
         <div className="container-rv" style={{ position: 'relative', zIndex: 2, paddingTop: '140px', paddingBottom: '120px' }}>
           <div style={{ maxWidth: '780px' }}>

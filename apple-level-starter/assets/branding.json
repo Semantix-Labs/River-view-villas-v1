@@ -1,0 +1,674 @@
+{
+  "brand": {
+    "name": "River View Villas",
+    "tagline": "Where Ancient Healing Meets Sacred Stillness",
+    "descriptor": "Luxury Ayurvedic Wellness Retreat · Bentota, Sri Lanka",
+    "founded": 2005,
+    "aesthetic": "Sacred Luxury — ultra-refined, minimal, conversion-first",
+    "personality": [
+      "Ancient yet refined",
+      "Authoritative yet warm",
+      "Healing-focused, never clinical",
+      "Premium without ostentation",
+      "Serene and purposeful"
+    ],
+    "voice": {
+      "tone": "Poetic, calm, confident, deeply human",
+      "avoid": [
+        "Generic spa language",
+        "Overly technical medical jargon",
+        "Exclamation marks",
+        "Pushy sales language",
+        "Casual slang or contractions"
+      ],
+      "examples": {
+        "good": [
+          "Your healing cannot wait any longer.",
+          "Five thousand years of wisdom. Applied today.",
+          "We do not offer spa days. We offer transformation.",
+          "Healing is not a luxury. It is a necessity."
+        ],
+        "bad": [
+          "Book now and get amazing deals!",
+          "We offer the best Ayurvedic treatments!",
+          "Check out our awesome packages!",
+          "You'll love it here!"
+        ]
+      }
+    }
+  },
+
+  "colors": {
+    "description": "Warm earth palette — gold, cream, deep brown. Never cold, never clinical.",
+    "primary": {
+      "gold": {
+        "hex": "#C9A96E",
+        "variable": "--gold",
+        "usage": "Primary accent — CTAs, borders, highlights, icon fills, hover states"
+      },
+      "gold_light": {
+        "hex": "#E8D5B0",
+        "variable": "--gold-light",
+        "usage": "Champagne — hover tints, soft dividers, background accents"
+      }
+    },
+    "dark_surfaces": {
+      "deep": {
+        "hex": "#1A1410",
+        "variable": "--deep",
+        "usage": "Near-black warm brown — hero overlays, dark sections, primary dark bg"
+      },
+      "earth": {
+        "hex": "#2C2016",
+        "variable": "--earth",
+        "usage": "Rich earth brown — full-bleed CTA sections, footer background"
+      }
+    },
+    "backgrounds": {
+      "cream": {
+        "hex": "#F7F3EE",
+        "variable": "--cream",
+        "usage": "Warm off-white — default page background, section fills"
+      },
+      "white": {
+        "hex": "#FFFFFF",
+        "variable": "--white",
+        "usage": "Pure white — cards, modals, form inputs"
+      }
+    },
+    "nature_accents": {
+      "sage": {
+        "hex": "#7A8C6E",
+        "variable": "--sage",
+        "usage": "Muted sage green — nature tags, wellness icons, subtle accents"
+      },
+      "river": {
+        "hex": "#4A6670",
+        "variable": "--river",
+        "usage": "Deep river blue-grey — links, secondary icons, info states"
+      }
+    },
+    "typography_tones": {
+      "text_dark": {
+        "hex": "#1A1410",
+        "variable": "--text-dark",
+        "usage": "All headlines and primary text"
+      },
+      "text_mid": {
+        "hex": "#5C4F3A",
+        "variable": "--text-mid",
+        "usage": "Body text, descriptions, paragraph content"
+      },
+      "text_light": {
+        "hex": "#9E8E78",
+        "variable": "--text-light",
+        "usage": "Labels, captions, eyebrow text, meta information"
+      }
+    },
+    "rules": [
+      "Never use pure black (#000000) — always use --deep or --text-dark",
+      "Never use cool grays — all neutrals must have warm undertones",
+      "Never use purple, blue-purple, or cool-toned gradients",
+      "Gold is reserved for accents only — never flood large surfaces with gold",
+      "Cream is the default page background — not white",
+      "Text on dark backgrounds uses --gold-light or --white, never pure gray",
+      "All color combinations must pass WCAG AA contrast minimum"
+    ],
+    "forbidden": ["#8B5CF6", "#6366F1", "#3B82F6", "#000000", "#F9FAFB", "#D1D5DB"]
+  },
+
+  "typography": {
+    "description": "Two-font system — editorial serif for display, clean humanist sans for body",
+    "display": {
+      "family": "Cormorant Garamond",
+      "source": "Google Fonts",
+      "import": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap",
+      "weights": {
+        "400": "Regular — section headings",
+        "400i": "Italic — poetic subheadings, pull quotes",
+        "600": "SemiBold — hero headlines",
+        "700": "Bold — reserved for hero only"
+      },
+      "usage": "All H1–H3 headings, hero text, package names, villa names, pull quotes",
+      "character": "Timeless, elegant, high-end editorial"
+    },
+    "body": {
+      "family": "Jost",
+      "source": "Google Fonts",
+      "import": "https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap",
+      "weights": {
+        "300": "Light — large intro paragraphs",
+        "400": "Regular — all body text",
+        "500": "Medium — labels, buttons, navigation, eyebrow text"
+      },
+      "usage": "Body text, navigation, buttons, labels, captions, form elements",
+      "character": "Geometric, clean, modern — complements the serif perfectly"
+    },
+    "scale": {
+      "hero_headline": {
+        "size": "clamp(52px, 8vw, 96px)",
+        "font": "Cormorant Garamond",
+        "weight": 600,
+        "line_height": 1.05,
+        "letter_spacing": "-0.02em",
+        "color": "--white (on dark) / --text-dark (on light)"
+      },
+      "h1": {
+        "size": "clamp(40px, 5vw, 64px)",
+        "font": "Cormorant Garamond",
+        "weight": 600,
+        "line_height": 1.1,
+        "letter_spacing": "-0.015em"
+      },
+      "h2": {
+        "size": "clamp(28px, 3.5vw, 44px)",
+        "font": "Cormorant Garamond",
+        "weight": 600,
+        "line_height": 1.15
+      },
+      "h3": {
+        "size": "clamp(20px, 2.5vw, 28px)",
+        "font": "Cormorant Garamond",
+        "weight": 400,
+        "line_height": 1.25
+      },
+      "eyebrow": {
+        "size": "11px",
+        "font": "Jost",
+        "weight": 500,
+        "letter_spacing": "0.2em",
+        "text_transform": "uppercase",
+        "color": "--gold",
+        "usage": "Section labels above headlines — e.g. OUR PHILOSOPHY, BENTOTA · SRI LANKA"
+      },
+      "body_large": {
+        "size": "18px",
+        "font": "Jost",
+        "weight": 300,
+        "line_height": 1.75,
+        "color": "--text-mid"
+      },
+      "body": {
+        "size": "16px",
+        "font": "Jost",
+        "weight": 400,
+        "line_height": 1.7,
+        "color": "--text-mid"
+      },
+      "caption": {
+        "size": "13px",
+        "font": "Jost",
+        "weight": 400,
+        "color": "--text-light"
+      },
+      "button": {
+        "size": "13px",
+        "font": "Jost",
+        "weight": 500,
+        "letter_spacing": "0.1em",
+        "text_transform": "uppercase"
+      }
+    },
+    "rules": [
+      "Never use Arial, Inter, Roboto, or system fonts",
+      "Headlines always in Cormorant Garamond — never Jost",
+      "Body text always in Jost — never Cormorant Garamond",
+      "Eyebrow labels always uppercase, letterspaced, gold colored",
+      "Never use font-weight 700 except on hero headlines",
+      "Italic Cormorant used for pull quotes and poetic emphasis only",
+      "Sentence case for all body copy — Title Case only for proper names"
+    ]
+  },
+
+  "spacing": {
+    "description": "Generous whitespace — luxury breathes. Never cramped.",
+    "base_unit": "8px",
+    "scale": {
+      "xs": "8px",
+      "sm": "16px",
+      "md": "24px",
+      "lg": "40px",
+      "xl": "64px",
+      "2xl": "96px",
+      "3xl": "128px",
+      "4xl": "192px"
+    },
+    "section_padding": {
+      "desktop": "128px 0",
+      "tablet": "96px 0",
+      "mobile": "64px 0"
+    },
+    "container": {
+      "max_width": "1280px",
+      "padding": "0 40px",
+      "padding_mobile": "0 20px"
+    },
+    "rules": [
+      "Sections breathe — minimum 96px vertical padding on desktop",
+      "Never stack two dark sections back to back without a cream break",
+      "Card padding minimum 32px",
+      "Between eyebrow and headline: 12px",
+      "Between headline and body: 20px",
+      "Between body and CTA: 32px"
+    ]
+  },
+
+  "layout": {
+    "grid": {
+      "columns": 12,
+      "gutter": "32px",
+      "breakpoints": {
+        "mobile": "< 640px",
+        "tablet": "640px – 1024px",
+        "desktop": "> 1024px"
+      }
+    },
+    "patterns": {
+      "hero": "Full-bleed image/video · dark overlay 45–55% · centered or left-aligned text",
+      "two_col": "Alternating — text left/image right, then image left/text right",
+      "cards": "3-column grid on desktop, 2 on tablet, 1 on mobile",
+      "feature": "Asymmetric — 60% content / 40% visual or 40% / 60%"
+    },
+    "rules": [
+      "Asymmetry preferred over perfect symmetry — luxury is never perfectly centered",
+      "Images always bleed to edge — never float with margins",
+      "Text blocks max-width 640px for readability",
+      "Overlap elements (text over image) for editorial feel",
+      "Diagonal section dividers or angled clips for visual interest",
+      "Never center-align long body paragraphs — left-align always"
+    ]
+  },
+
+  "components": {
+    "buttons": {
+      "primary": {
+        "background": "--gold",
+        "color": "--deep",
+        "padding": "16px 40px",
+        "font": "Jost 500, 13px, uppercase, 0.1em letterspaced",
+        "border_radius": "2px",
+        "border": "none",
+        "hover": {
+          "background": "#B8955A",
+          "transform": "translateY(-1px)"
+        },
+        "usage": "Main booking CTA — Reserve Your Retreat, Book Now"
+      },
+      "secondary": {
+        "background": "transparent",
+        "color": "--white",
+        "padding": "15px 40px",
+        "border": "1px solid rgba(255,255,255,0.5)",
+        "border_radius": "2px",
+        "hover": {
+          "border_color": "--gold",
+          "color": "--gold"
+        },
+        "usage": "Ghost button on dark backgrounds — Explore Treatments, Learn More"
+      },
+      "text_link": {
+        "color": "--gold",
+        "font": "Jost 500, 13px, uppercase, 0.1em letterspaced",
+        "decoration": "none",
+        "after": "→ (arrow, same color, margin-left 8px)",
+        "hover": {
+          "gap": "arrow moves 4px right on hover"
+        },
+        "usage": "In-page navigation — View All Packages →"
+      },
+      "rules": [
+        "Border-radius maximum 4px — never pill-shaped buttons",
+        "Primary button always gold — never any other color",
+        "Never use rounded corners above 4px on buttons",
+        "Button text always uppercase, always letterspaced",
+        "Minimum touch target 48px height on mobile"
+      ]
+    },
+    "cards": {
+      "package_card": {
+        "background": "--white",
+        "border_radius": "4px",
+        "overflow": "hidden",
+        "border": "none",
+        "shadow": "0 2px 32px rgba(26,20,16,0.08)",
+        "image_ratio": "4:3",
+        "padding": "32px",
+        "badge": {
+          "position": "top-left on image",
+          "background": "--gold",
+          "color": "--deep",
+          "text": "Jost 500 11px uppercase 0.15em letterspaced",
+          "padding": "6px 14px",
+          "border_radius": "2px"
+        },
+        "hover": {
+          "shadow": "0 8px 48px rgba(26,20,16,0.14)",
+          "transform": "translateY(-4px)"
+        }
+      },
+      "villa_card": {
+        "layout": "Full-width alternating — image 50% / text 50%",
+        "image": "Full-bleed, no border-radius on image side",
+        "text_padding": "64px",
+        "background": "--cream"
+      },
+      "treatment_card": {
+        "layout": "Grid card",
+        "background": "--white",
+        "padding": "28px",
+        "border_top": "2px solid --gold",
+        "border_radius": "0 0 4px 4px"
+      },
+      "review_card": {
+        "background": "transparent",
+        "border_left": "2px solid --gold",
+        "padding_left": "24px",
+        "quote_style": "Cormorant Garamond 400 italic 20px"
+      }
+    },
+    "navigation": {
+      "desktop": {
+        "background": "transparent (scrolled: rgba(26,20,16,0.95) with backdrop-blur)",
+        "height": "80px",
+        "logo_height": "48px",
+        "link_style": "Jost 400 13px uppercase 0.12em letterspaced --white",
+        "link_hover": "--gold",
+        "active": "--gold",
+        "cta_button": "Primary button (gold) — Book Now",
+        "position": "fixed top-0 full-width z-50"
+      },
+      "mobile": {
+        "trigger": "Hamburger — 3 lines, gold color",
+        "overlay": "Full screen, background --deep",
+        "link_style": "Cormorant Garamond 600 32px --white, centered",
+        "animation": "Stagger fade-in from bottom"
+      }
+    },
+    "dividers": {
+      "gold_rule": {
+        "element": "<hr>",
+        "border": "none",
+        "height": "1px",
+        "background": "--gold",
+        "opacity": 0.3,
+        "width": "80px",
+        "usage": "Below eyebrow text, section breaks"
+      },
+      "section_break": {
+        "type": "Full-width 1px line",
+        "color": "rgba(201,169,110,0.15)"
+      }
+    },
+    "badges": {
+      "most_popular": {
+        "background": "--gold",
+        "color": "--deep",
+        "text": "Most Popular",
+        "border_radius": "2px"
+      },
+      "premium": {
+        "background": "--deep",
+        "color": "--gold",
+        "border": "1px solid --gold",
+        "text": "Signature",
+        "border_radius": "2px"
+      },
+      "duration": {
+        "background": "rgba(26,20,16,0.7)",
+        "color": "--white",
+        "border_radius": "2px"
+      }
+    },
+    "forms": {
+      "input": {
+        "background": "--white",
+        "border": "1px solid rgba(201,169,110,0.3)",
+        "border_radius": "2px",
+        "padding": "14px 18px",
+        "font": "Jost 400 16px --text-dark",
+        "placeholder_color": "--text-light",
+        "focus_border": "--gold",
+        "focus_outline": "none",
+        "focus_shadow": "0 0 0 3px rgba(201,169,110,0.15)"
+      },
+      "label": {
+        "font": "Jost 500 11px uppercase 0.12em letterspaced",
+        "color": "--text-light",
+        "margin_bottom": "8px"
+      },
+      "submit": "Primary button style — full width on mobile"
+    }
+  },
+
+  "imagery": {
+    "style": "Moody, warm, high-contrast editorial photography",
+    "subjects": [
+      "Bentota River at dawn/dusk",
+      "Aerial/drone of villa and river",
+      "Hands-on Ayurvedic treatments — oil pouring, massage",
+      "Lush tropical gardens with morning light",
+      "Yoga on open-air pavilion",
+      "Herbal ingredients — botanicals, oils, powders",
+      "Guests in deep relaxation (no forced smiles)",
+      "Shirodhara oil stream",
+      "Architectural details — villa textures, wood, stone",
+      "Ayurvedic meals — earthy ceramic bowls, herbs"
+    ],
+    "editing": {
+      "tone": "Warm — boost amber/gold in midtones",
+      "contrast": "Medium-high — rich shadows",
+      "saturation": "Slightly desaturated — earthy, not vivid",
+      "avoid": ["Bright blue sky hero shots", "Stock photo smiling models", "Sterile white spa aesthetic", "Oversaturated tropical colors"]
+    },
+    "overlays": {
+      "hero": "linear-gradient(to bottom, rgba(26,20,16,0.45) 0%, rgba(26,20,16,0.6) 100%)",
+      "card_hover": "rgba(26,20,16,0.2)",
+      "text_protection": "linear-gradient(to top, rgba(26,20,16,0.7) 0%, transparent 60%)"
+    },
+    "aspect_ratios": {
+      "hero": "16:9 or full viewport height",
+      "package_card": "4:3",
+      "villa_card": "1:1 or 3:4 portrait",
+      "treatment": "1:1 square",
+      "gallery": "Mixed — 1:1, 4:3, 3:4"
+    },
+    "rules": [
+      "Always use Next.js <Image> with priority on above-fold",
+      "Lazy load all below-fold images",
+      "Minimum resolution: 1400px wide for hero, 800px for cards",
+      "Alt text always descriptive for accessibility and SEO"
+    ]
+  },
+
+  "animation": {
+    "library": "Framer Motion",
+    "philosophy": "Restraint — one well-orchestrated reveal is worth 10 micro-interactions",
+    "presets": {
+      "fade_up": {
+        "initial": { "opacity": 0, "y": 24 },
+        "animate": { "opacity": 1, "y": 0 },
+        "transition": { "duration": 0.7, "ease": "easeOut" }
+      },
+      "fade_in": {
+        "initial": { "opacity": 0 },
+        "animate": { "opacity": 1 },
+        "transition": { "duration": 0.6, "ease": "easeOut" }
+      },
+      "stagger_children": {
+        "variants_container": { "animate": { "transition": { "staggerChildren": 0.12 } } },
+        "variants_item": {
+          "hidden": { "opacity": 0, "y": 20 },
+          "visible": { "opacity": 1, "y": 0, "transition": { "duration": 0.6 } }
+        }
+      },
+      "scale_in": {
+        "initial": { "opacity": 0, "scale": 0.96 },
+        "animate": { "opacity": 1, "scale": 1 },
+        "transition": { "duration": 0.5, "ease": "easeOut" }
+      }
+    },
+    "scroll_trigger": "Use Framer Motion whileInView with once:true",
+    "parallax": {
+      "hero_image": "Subtle Y offset on scroll — max 60px movement",
+      "implementation": "useScroll + useTransform from framer-motion"
+    },
+    "hover_states": {
+      "cards": "translateY(-4px) + shadow deepens — 0.3s ease",
+      "buttons": "translateY(-1px) — 0.2s ease",
+      "links": "Arrow slides right 4px — 0.2s ease",
+      "images": "scale(1.02) inside overflow:hidden — 0.5s ease"
+    },
+    "page_transitions": {
+      "enter": "Fade up — 0.5s",
+      "exit": "Fade out — 0.3s"
+    },
+    "rules": [
+      "Never animate more than 3 elements simultaneously",
+      "Respect prefers-reduced-motion — wrap all animations in check",
+      "No bounce or spring on luxury brand — use easeOut only",
+      "No loading spinners — use skeleton screens with cream/gold-light colors",
+      "Avoid parallax on mobile — disable for performance"
+    ]
+  },
+
+  "iconography": {
+    "library": "Lucide React",
+    "size": {
+      "nav": "20px",
+      "inline": "18px",
+      "feature": "24px",
+      "large_accent": "40px"
+    },
+    "color": "--gold for accent icons, --text-light for utility icons",
+    "stroke_width": "1.5px — never 2px (too heavy for luxury brand)",
+    "custom_icons": {
+      "style": "Custom SVG line icons matching Lucide aesthetic",
+      "subjects": ["Lotus flower", "Om symbol", "Ayurveda leaf", "River wave", "Pulse/nadi"]
+    },
+    "rules": [
+      "Never use emoji in UI — SVG icons only",
+      "Never use filled/solid icons — outline only",
+      "Icons always paired with text label — never icon-only for navigation"
+    ]
+  },
+
+  "logo": {
+    "primary": "/public/Rlogo.png",
+    "secondary_wordmark": "/public/home2.png",
+    "usage": {
+      "on_dark": "White wordmark version",
+      "on_light": "Dark wordmark version",
+      "on_hero": "White, centered or left-aligned"
+    },
+    "clearspace": "Minimum clearspace equal to logo height on all sides",
+    "minimum_size": "120px wide",
+    "rules": [
+      "Never recolor the logo",
+      "Never place on busy image without overlay",
+      "Never stretch or distort proportions",
+      "Footer: white logo on earth/deep background"
+    ]
+  },
+
+  "seo": {
+    "meta": {
+      "title_pattern": "{Page Name} | River View Villas — Ayurvedic Retreat Sri Lanka",
+      "description_max": 155,
+      "og_image_size": "1200x630px"
+    },
+    "structured_data": {
+      "type": "LodgingBusiness",
+      "name": "River View Villas",
+      "url": "https://www.riverview-villas.com",
+      "telephone": ["+94777217829", "+94777417737"],
+      "email": "Riverviewvillas23@Gmail.Com",
+      "address": {
+        "streetAddress": "No 102/7C, Mathugama Road",
+        "addressLocality": "Dharga Town",
+        "addressRegion": "Western Province",
+        "addressCountry": "LK"
+      },
+      "priceRange": "$$$$",
+      "amenityFeature": ["Ayurvedic treatments", "Yoga", "Meditation", "Full board", "River view", "Private pool"]
+    }
+  },
+
+  "booking": {
+    "engine": "Profitroom",
+    "base_url": "https://booking.profitroom.com/en/riverviewvillas/home",
+    "package_url_pattern": "https://booking.profitroom.com/en/riverviewvillas/details/offer/{OFFER_ID}",
+    "cta_primary": "Reserve Your Retreat",
+    "cta_secondary": "Check Availability",
+    "cta_enquiry": "Request a Free Consultation",
+    "trust_signals": [
+      "Free cancellation (T&C)",
+      "50% deposit only",
+      "Full board included",
+      "Doctor consultation on arrival",
+      "Est. 2005 — 20 years of healing"
+    ],
+    "whatsapp": {
+      "number": "+94777217829",
+      "url": "https://wa.me/94777217829",
+      "floating_button": true,
+      "position": "fixed bottom-right",
+      "style": {
+        "background": "#25D366",
+        "size": "56px",
+        "border_radius": "50%",
+        "shadow": "0 4px 16px rgba(37,211,102,0.4)",
+        "z_index": 9999
+      }
+    }
+  },
+
+  "css_variables_snippet": ":root { --gold: #C9A96E; --gold-light: #E8D5B0; --deep: #1A1410; --earth: #2C2016; --cream: #F7F3EE; --sage: #7A8C6E; --river: #4A6670; --text-dark: #1A1410; --text-mid: #5C4F3A; --text-light: #9E8E78; --white: #FFFFFF; --font-display: 'Cormorant Garamond', Georgia, serif; --font-body: 'Jost', system-ui, sans-serif; --radius-sm: 2px; --radius-md: 4px; --radius-lg: 8px; --shadow-card: 0 2px 32px rgba(26,20,16,0.08); --shadow-card-hover: 0 8px 48px rgba(26,20,16,0.14); --transition-base: 0.3s ease; --transition-slow: 0.6s ease; --container-max: 1280px; --section-padding-desktop: 128px; --section-padding-mobile: 64px; }",
+
+  "tailwind_config_extend": {
+    "colors": {
+      "gold": { "DEFAULT": "#C9A96E", "light": "#E8D5B0" },
+      "deep": "#1A1410",
+      "earth": "#2C2016",
+      "cream": "#F7F3EE",
+      "sage": "#7A8C6E",
+      "river": "#4A6670",
+      "text": { "dark": "#1A1410", "mid": "#5C4F3A", "light": "#9E8E78" }
+    },
+    "fontFamily": {
+      "display": ["Cormorant Garamond", "Georgia", "serif"],
+      "body": ["Jost", "system-ui", "sans-serif"]
+    },
+    "fontSize": {
+      "hero": ["clamp(52px,8vw,96px)", { "lineHeight": "1.05" }],
+      "display": ["clamp(40px,5vw,64px)", { "lineHeight": "1.1" }],
+      "eyebrow": ["11px", { "letterSpacing": "0.2em" }]
+    },
+    "borderRadius": {
+      "brand": "2px",
+      "brand-md": "4px"
+    },
+    "boxShadow": {
+      "card": "0 2px 32px rgba(26,20,16,0.08)",
+      "card-hover": "0 8px 48px rgba(26,20,16,0.14)"
+    }
+  },
+
+  "do_not": [
+    "Use purple, blue-purple, or cool gradients anywhere",
+    "Use Inter, Roboto, Arial, or system fonts for headings",
+    "Use pill-shaped or fully rounded buttons",
+    "Use emoji in the UI",
+    "Use filled/solid icons",
+    "Use pure black (#000000) for text",
+    "Use bright white (#FFFFFF) as the page background",
+    "Use bounce or spring animations",
+    "Center-align long paragraphs",
+    "Use more than 2 font families",
+    "Use more than 3 font weights",
+    "Add decorative gradients or noise textures",
+    "Use stock photos of smiling models",
+    "Use exclamation marks in headlines or CTAs",
+    "Place the WhatsApp button on top of main CTAs",
+    "Use the gold color for large background fills"
+  ]
+}
